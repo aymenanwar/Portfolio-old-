@@ -1,0 +1,519 @@
+body{
+  margin: 0;
+  overflow-x: hidden;
+  background-image: url(../images/eye.png);
+  background-position: center;
+  background-attachment: fixed;
+}
+a{
+  text-decoration: none;
+  color: #ed4040;
+  font-weight: 700;
+}
+.top{
+  height: 100vw;
+}
+#particles-js{
+  background:black;
+  height:100vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#particles-js h1 {
+  position: absolute;
+  top: 55%;
+  left: 33%;
+  color: #fff;
+  font-size: 70px;
+  font-weight: 80;
+  font-family: 'Courgette', cursive;
+}
+#particles-js h3{
+  position: absolute;
+  top: 57%;
+  left: 37%;
+  color: #5f656d;
+  font-weight: 30;
+  font-size: 15px;
+  font-family: 'Indie Flower', cursive;
+  opacity: .5;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+#wrapper{
+  position: relative;
+  width:100%;
+  height: 100vw;
+  min-height:55vw;
+  overflow: hidden;
+  margin: 0px;
+}
+.layer{
+  position: absolute;
+  width:100vw;
+  min-height: 70vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.layer bottom h3{
+  align-items: center;
+}
+nav{
+  display: inline-flex;
+  position: fixed;
+  left: 0;
+  list-style: none;
+  margin-top: 100px;
+  z-index: 3;
+}
+nav ul li{
+  list-style: none;
+  padding: 5px;
+  margin:0px;
+}
+nav ul li a{
+  font-size: 0.7em;
+  text-decoration: none;
+  color: #778499;
+  text-transform: uppercase;
+}
+
+.slider{
+	overflow: hidden;
+	height: 60vh;
+  background: #fdfdfd;
+}
+
+.slider figure div{
+	width: 20%;
+	float: left;
+  text-align: center;
+}
+.slide {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.slide h1, .edu h1{
+  grid-row: 1/4;
+  grid-column: 1/4;
+  font-size: 50px;
+}
+.slide h2{
+  grid-row: 4/5;
+  grid-column: 1/5;
+}
+.slide h3{
+  grid-row: 4/5;
+  font-size: 25px;
+  color: #e33303;
+}
+.slide p{
+  line-height: 2;
+  font-size: 20px;
+}
+.slider figure img{
+	width: 100%;
+	float: left;
+}
+ .slider .edu{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.slider .edu p{
+  font: initial;
+  line-height: 2;
+}
+.slider .edu h3{
+  font-size: 25px;
+  color: #e33303;
+}
+
+.slider figure{
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 40s contentslide infinite;
+}
+
+@keyframes contentslide{
+	0%{
+		left: 0%
+	}
+	10%{
+		left: 0%;
+	}
+	12%{
+		left: -100%;
+	}
+	22%{
+		left: -100%;
+	}
+	24%{
+		left: -200%;
+	}
+	34%{
+		left: -200%;
+	}
+	36%{
+		left: -300%;
+	}
+	46%{
+		left: -300%;
+	}
+	48%{
+		left: -400%;
+	}
+	58%{
+		left: -400%;
+	}
+	60%{
+		left: -300%;
+	}
+	70%{
+		left: -300%;
+	}
+	72%{
+		left: -200%;
+	}
+	82%{
+		left: -200%;
+	}
+	84%{
+		left: -100%;
+	}
+	94%{
+		left: -100%;
+	}
+	96%{
+		left: 0%;
+	}
+	100%{
+		left: 0%;
+	}
+}
+
+.container1{
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  max-width: 960px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0px;
+  text-align: center;
+}
+.vidwrap{
+  position: absolute;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  left: 0;
+}
+.vidwrap video{
+  min-width: 100%;
+  min-height: 100%;
+  left: 0;
+}
+.overlay{
+  position: absolute;
+  height: 60vh;
+  width: 100%;
+  background: #225470;
+  z-index: 1;
+  opacity: .35;
+  left: 0;
+}
+.content{
+  z-index: 2;
+}
+.content h1{
+  font-size: 50px;
+  margin-bottom: 0;
+
+}
+.content p{
+  font-size: 1.2rem;
+  display: block;
+  padding-bottom: 2rem;
+  text-align: right;
+}
+
+
+
+.game {
+  background: #000;
+  margin: 20vh 0px;
+  width: 100vw;
+  height: 110vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  grid-gap: 10px;
+}
+.game  img{
+  width: 50vw;
+  height: 400px;
+  display: block;
+}
+.game > div{
+  position: relative;
+  cursor: pointer;
+  max-width: 50vw;
+  overflow: hidden;
+}
+.game div:hover .post-s{
+  width: 50vw;
+  opacity: .8;
+}
+
+.post-s{
+  width: 0px;
+  height: 400px;
+  background: red;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: .7s ease;
+}
+.post-s h1{
+  font-size: 60px;
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: center;
+}
+.post-s p{
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: left;
+  margin-right: 30px;
+  font-size: 30px;
+}
+
+.grid2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #dbdbdb;
+  text-align:left;
+
+}
+.grid2 p{
+  margin-right: 4.7rem;
+  line-height: 1.5;
+}
+ .grid2 h1{
+   font-size: 1.3rem;
+   text-align: justify;
+   font-family: 'Risque',cursive;
+   font-weight: 800;
+   color: #13c697;
+   margin-bottom: 30px;
+   text-transform: capitalize;
+ }
+ .grid2 img {
+   width: 18px;
+   height: 18px;
+   margin-bottom: -4px;
+   padding: 0;
+ }
+ .icon1 {
+   background-image: url(../images/clock.svg);
+   background-repeat: no-repeat;
+   background-position:center;
+   background-size: contain;
+   width: 7vw;
+   margin-left: 145px;
+   opacity: .3;
+ }
+ .icon2{
+   background-image: url(../images/group.svg);
+   background-repeat: no-repeat;
+   background-position:center;
+   background-size: contain;
+   width: 7vw;
+   margin-left: 145px;
+   opacity: .3;
+ }
+ .icon3{
+   background-image: url(../images/sharing.svg);
+   background-repeat: no-repeat;
+   background-position:center;
+   background-size: contain;
+   width: 7vw;
+   margin-left: 145px;
+   opacity: .3;
+ }
+
+#social img{
+  width: 2.7rem;
+  margin-top: .2rem;
+  height: 4rem;
+  padding: .1rem;
+  opacity: .3;
+}
+#social img:hover{
+  opacity: 1;
+}
+
+footer{
+  color: #fff;
+  background: #000;
+  font-size: 16px;
+  text-align: center;
+  opacity: .8;
+}
+
+@media (max-width: 473px) {
+  body{
+  overflow-x: hidden;
+  }
+  nav ul li a{
+    font-size: 0.7em;
+}
+nav{
+left:-30px;
+}
+  #wrapper h1{
+    font-size: 1.7rem;
+    margin-top: 75px;
+    margin-left: 26px;
+    font-family: 'Times New Roman', sans-serif;
+  }
+  #wrapper h3{
+    font-size: 0.7rem;
+    margin-top: 60px;
+    margin-left: 20px;
+    font-family: 'Times New Roman', sans-serif;
+  }
+  .content p{
+    font-size: 0.9em;
+    text-align: center;
+  }
+  .content h1{
+    text-align: center;
+    font-size: 1.9em;
+  }
+  .content{
+    width: 100vw;
+  }
+  .container1{
+  margin-bottom:30px;
+  }
+  .slider{
+    height: 70vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  .slide{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .slide h1{
+    grid-row: 1/4;
+    grid-column: 1/4;
+    font-size: 30px;
+  }
+  .slide h2{
+    grid-row: 4/5;
+    grid-column: 1/5;
+  }
+  .slide h3{
+    font-size: 20px;
+    color: #e33303;
+  }
+  .slide .edu{
+    display: grid;
+    grid-template-columns: 1fr ;
+  }
+  .slide .edu h3{
+    line-height: 1;
+    font-size: 20px;
+  }
+  .slide .edu p{
+    font-size: 20px;
+  }
+
+  .grid2{
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: 'Time New Roman'sans-serif;
+    text-align: center;
+    line-height: 2;
+    margin: 0px;
+  }
+  .grid2 h1{
+    font-family: 'Times New Roman', sans-serif;
+    text-align: center;
+    line-height: 1;
+    margin-left:  25%;
+    margin-right: 25%;
+    margin-top: 5vh;
+
+  }
+  .grid2 p{
+    margin-left:  25%;
+    margin-right: 25%;
+  }
+  .grid2 .social{
+    margin-left:  25%;
+    margin-right: 25%;
+  }
+
+  .game {
+    margin-top: 20px
+    display: grid;
+    grid-template-columns: 1fr;
+    min-width: 100vw;
+    height: 140vh;
+    margin: 0px;
+  }
+  .game > div{
+    position: relative;
+    cursor: pointer;
+    min-width: 100vw;
+    height: 30vh;
+  }
+  .game div:hover .post-s{
+    width: 100vw;
+    opacity: .8;
+    height: 30vh;
+  }
+  .game img{
+    width: 100vw;
+    height: 100%;
+  }
+  .post-s{
+    width: 0px;
+    height: 400px;
+    background: red;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: .7s ease;
+    text-align: center;
+  }
+  .game h1{
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 2.5rem;
+  }
+  .game p{
+    font-size: 1.3em;
+  }
+
+}
